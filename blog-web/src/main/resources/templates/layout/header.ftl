@@ -46,7 +46,7 @@
                                 <#list listAvailableOAuthPlatforms as item>
                                     <li>
                                         <a href="${config.siteUrl}/oauth/render/${item}" target="">
-                                            <img src="https://gitee.com/yadong.zhang/static/raw/master/JustAuth/${item}.png" alt="" class="img-circle">
+                                            <img src="https://sm.darebeat.cn/images/2021/02/15/${item}.png" alt="" class="img-circle">
                                         </a>
                                     </li>
                                 </#list>
