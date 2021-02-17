@@ -79,7 +79,7 @@ function initArticeMenu() {
                 var tagIndex = parseInt(tagName.charAt(1)) - 1;
 
                 $this.addClass("menu-title").before($('<span id="menu_' + index + '" class="menu-point"></span>'));
-                aDom = '<a href="#menu_' + index + '" style="display:inline-block;"><i class="fa fa-caret-right"></i>' + '  ' + tagText + '</a>';
+                aDom = '<a href="#menu_' + index + '" style="display:inline-block;"><i class="fa fa-anchor"></i>' + '  ' + tagText + '</a>';
                 liDom = '<li style="padding-left:' + padding[tagIndex] + 'px;">' + aDom + '</li>';
                 $articleMenu.find("ul").append(liDom);
                 hasMenu = true;
@@ -206,12 +206,12 @@ $(function () {
     initArticeMenu();
     initScrollMenu();
 
-    console.group("关于OneBlog");
-    console.log("OneBlog，一个简洁美观、功能强大并且自适应的Java博客\n欢迎进QQ交流群（190886500）");
-    console.groupEnd();
-    console.log("%c生活真他妈好玩，因为生活老他妈玩我！", "color:green;font-size:20px;font-weight:blod");
-    console.groupEnd();
-    console.log("爱谁谁...");
+    // console.group("关于OneBlog");
+    // console.log("OneBlog，一个简洁美观、功能强大并且自适应的Java博客\n欢迎进QQ交流群（190886500）");
+    // console.groupEnd();
+    // console.log("%c生活真他妈好玩，因为生活老他妈玩我！", "color:green;font-size:20px;font-weight:blod");
+    // console.groupEnd();
+    // console.log("爱谁谁...");
 
     $('.to-top').toTop({
         autohide: true,//返回顶部按钮是否自动隐藏。可以设置true或false。默认为true

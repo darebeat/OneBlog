@@ -1,6 +1,10 @@
+#! /bin/bash
+
+BASE_PATH=$(cd `dirname $0`; pwd)
+
 # http://yui.github.io/yuicompressor/
 #
-# java -jar yuicompressor-x.y.z.jar
+# java -jar ${BASE_PATH:-.}/yuicompressor-x.y.z.jar
 # Usage: java -jar yuicompressor-x.y.z.jar [options] [input file]
 #
 #   Global Options
@@ -67,21 +71,21 @@
 #   --disable-optimizations
 #       Disable all the built-in micro optimizations.
 #
-# -------------- start package javascript --------------
+
 
 ## cat a > b - 将a文件内容合并到b文件中
 ## cat a >> b - 将a文件内容追加到b文件中
 
-cat ../../blog-web/src/main/resources/static/js/zhyd.core.js > zhyd.all.js
-cat ../../blog-web/src/main/resources/static/js/zhyd.js >> zhyd.all.js
-cat ../../blog-web/src/main/resources/static/js/zhyd.comment.js >> zhyd.all.js
-java -jar yuicompressor-2.4.8.jar zhyd.all.js -o ../../blog-web/src/main/resources/static/js/zhyd.min.js --charset utf-8 --type js
-rm -f zhyd.all.js
+# blog-web
+## -------------- start package javascript --------------
+cat ${BASE_PATH:-.}/../../blog-web/src/main/resources/static/js/zhyd.core.js > zhyd-web.all.js
+cat ${BASE_PATH:-.}/../../blog-web/src/main/resources/static/js/zhyd.js >> zhyd-web.all.js
+cat ${BASE_PATH:-.}/../../blog-web/src/main/resources/static/js/zhyd.comment.js >> zhyd-web.all.js
+java -jar ${BASE_PATH:-.}/yuicompressor-2.4.8.jar zhyd-web.all.js -o ${BASE_PATH:-.}/../../blog-web/src/main/resources/static/js/zhyd-web.min.js --charset utf-8 --type js
+rm -f zhyd-web.all.js
 
-
-# -------------- start package css --------------
-cat ../../blog-web/src/main/resources/static/css/zhyd.core.css > zhyd.all.css
-cat ../../blog-web/src/main/resources/static/css/zhyd.comment.css >> zhyd.all.css
-java -jar yuicompressor-2.4.8.jar zhyd.all.css -o ../../blog-web/src/main/resources/static/css/zhyd.min.css --charset utf-8 --type css
-
-rm -f zhyd.all.css
+## -------------- start package css --------------
+cat ${BASE_PATH:-.}/../../blog-web/src/main/resources/static/css/zhyd.core.css > zhyd-web.all.css
+cat ${BASE_PATH:-.}/../../blog-web/src/main/resources/static/css/zhyd.comment.css >> zhyd-web.all.css
+java -jar ${BASE_PATH:-.}/yuicompressor-2.4.8.jar zhyd-web.all.css -o ${BASE_PATH:-.}/../../blog-web/src/main/resources/static/css/zhyd-web.min.css --charset utf-8 --type css
+rm -f zhyd-web.all.css

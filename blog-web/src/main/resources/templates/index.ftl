@@ -14,7 +14,7 @@
             <div class="scrolltext">
                 <ul class="list-unstyled" id="notice-box">
                     <li class="scrolltext-title">
-                        <a href="javascript:void(0)" rel="bookmark">本站正式启用新域名:<a href="https:/www.zhyd.me" target="_blank"><strong>https:/www.zhyd.me</strong></a></a>
+                        <a href="javascript:void(0)" rel="bookmark">本站正式启用新域名:<a href="https://blog.darebeat.cn" target="_blank"><strong>https://blog.darebeat.cn</strong></a></a>
                     </li>
                     <li class="scrolltext-title">
                         <a href="javascript:void(0)" rel="bookmark">活了二十多年，没能为祖国、为人民做点什么，每思及此，伤心欲绝。</a>
@@ -119,12 +119,11 @@
                         <div class="clear" style="margin-bottom: 10px"></div>
                         <ul class="list-unstyled list-inline search-hot">
                             <li><strong style="position: relative;top: 2px;color: #999999;">热门搜索：</strong></li>
-                            <li><a class="pointer" rel="external nofollow"><span class="label label-default">Java</span></a></li>
-                            <li><a class="pointer" rel="external nofollow"><span class="label label-primary">Springboot</span></a></li>
+                            <li><a class="pointer" rel="external nofollow"><span class="label label-default">Shell</span></a></li>
+                            <li><a class="pointer" rel="external nofollow"><span class="label label-primary">Docker</span></a></li>
                             <li><a class="pointer" rel="external nofollow"><span class="label label-success">Linux</span></a></li>
-                            <li><a class="pointer" rel="external nofollow"><span class="label label-info">Maven</span></a></li>
-                            <li><a class="pointer" rel="external nofollow"><span class="label label-warning">Bootstrap</span></a></li>
-                            <li><a class="pointer" rel="external nofollow"><span class="label label-danger">阿里云</span></a></li>
+                            <li><a class="pointer" rel="external nofollow"><span class="label label-success">Git</span></a></li>
+                            <li><a class="pointer" rel="external nofollow"><span class="label label-success">k8s</span></a></li>
                         </ul>
                     </form>
                 </article>

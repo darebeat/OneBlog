@@ -24,7 +24,8 @@
     <link href="https://cdn.jsdelivr.net/npm/@adactive/bootstrap-tagsinput@0.8.2/dist/bootstrap-tagsinput-typeahead.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@adactive/bootstrap-tagsinput@0.8.2/dist/bootstrap-tagsinput.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/switchery-npm@0.8.2/index.min.css" rel="stylesheet">
-<#--
+
+    <#--
     <link href="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.buttons.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.2.1/pnotify.nonblock.css" rel="stylesheet">-->

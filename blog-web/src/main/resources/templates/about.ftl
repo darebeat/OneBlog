@@ -14,7 +14,10 @@
                 <h5 class="custom-title"><i class="fa fa-user-secret fa-fw"></i><strong>博主简介</strong><small></small></h5>
                 <div class="info">
                     <p>
-                        码农一枚
+                        看山是山，看水是水。<br>
+                        看山不是山，看水不是水。<br>
+                        看山还是山，看水还是水。<br><br>
+                        做一个有内涵的个人博客，趁年轻，做一些自己力所能及的事情。
                     </p>
                 </div>
                 <h5 class="custom-title"><i class="fa fa-coffee fa-fw"></i><strong>关于博客</strong><small></small></h5>
