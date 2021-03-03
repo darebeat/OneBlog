@@ -10,17 +10,13 @@
     </resultMap>
 
     <select id="listArchives" resultMap="rm">
-		SELECT
-			a.id,
-			a.title,
-			a.original,
-			DATE_FORMAT( a.create_time, '%Y-%m-%d' ) AS 'datetime'
-		FROM
-			biz_article a
-		WHERE
-			a.`status` = 1
-		ORDER BY
-			a.create_time DESC
-	</select>
+    SELECT a.id,
+      a.title,
+      a.original,
+      DATE_FORMAT( a.create_time, '%Y-%m-%d' ) AS 'datetime'
+    FROM biz_article a
+    WHERE a.`status`=1
+    ORDER BY a.create_time DESC
+  </select>
 </mapper>
 

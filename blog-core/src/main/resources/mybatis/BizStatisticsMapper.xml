@@ -8,30 +8,20 @@
     </resultMap>
 
     <select id="listSpider" parameterType="Integer" resultMap="rm">
-		SELECT
-			l.spider_type AS 'name',
-			COUNT( l.id ) AS name_value
-		FROM
-			sys_log l
-		WHERE
-			l.spider_type IS NOT NULL
-		GROUP BY
-			l.spider_type
-		ORDER BY
-			name_value DESC
-	</select>
+    SELECT l.spider_type AS 'name',
+      COUNT(l.id) AS name_value
+    FROM sys_log l
+    WHERE l.spider_type IS NOT NULL
+    GROUP BY l.spider_type
+    ORDER BY name_value DESC
+  </select>
 
     <select id="listType" parameterType="Integer" resultMap="rm">
-		SELECT
-			bt.`name` AS 'name',
-			count( ba.id ) AS name_value
-		FROM
-			biz_type bt
-			INNER JOIN biz_article ba ON bt.id = ba.type_id
-		GROUP BY
-			ba.type_id
-		ORDER BY
-			name_value DESC
-	</select>
+    SELECT bt.`name` AS 'name',
+      count(ba.id) AS name_value
+    FROM biz_type bt
+    INNER JOIN biz_article ba ON bt.id=ba.type_id
+    GROUP BY ba.type_id
+    ORDER BY name_value DESC
+  </select>
 </mapper>
-
